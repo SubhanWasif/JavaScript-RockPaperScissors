@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-sky-800 ">
+
+<div id="navbar" class="flex justify-center items-center h-[5rem] text-[2rem] font-mono bg-white">
+    Rock Paper Scissors
+</div>
+
+<div class="container m-auto flex justify-center flex-col items-center text-white">
+
+
+    <div id="score" class="mt-[3rem] text-[4rem] gap-[5rem] text-white flex justify-center items-center ">
+        <div class="flex  justify-center items-center gap-[0px] flex-col ">
+            <div class="text-[15px] ">YOUR SCORE</div>
+            <div id="playerscore" class="">
+                0
+            </div>
+        </div>
+        <div id="divider" class="h-[70px] w-[1px] bg-white"></div>
+        
+        <div class="flex justify-center flex-col items-center">
+        <div class="text-[15px]">COMPUTER SCORE</div>
+        <div id="computerscore">
+            0
+        </div>
+    </div>
+    </div>
+    <div id="text" class="text-[2rem]">Rock Paper Scissors,You win</div>
+
+    <div id="buttons" class="flex gap-[3rem] m-[20px]">
+        <button id="rock">
+            <img src="rock.png" alt="" class="mix-blend-multiply h-[10rem] w-[10rem]  rounded-[50%] ">
+        </button>
+        <button id="paper">
+            <img src="paper.png" alt="" class="mix-blend-multiply h-[10rem] w-[10rem]  rounded-[50%]">
+        </button>
+        <button id="scissors">
+            <img src="scissors.png" alt="" class="mix-blend-multiply h-[10rem] w-[10rem]  rounded-[30%]">
+        </button>
+    </div>
+    <div id="reset" class="hidden">
+        <button class="">Restart</button>
+    </div>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
